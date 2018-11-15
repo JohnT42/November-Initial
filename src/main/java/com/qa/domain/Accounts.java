@@ -1,4 +1,4 @@
-package com.qa.persistance.domain;
+package com.qa.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -20,6 +20,13 @@ public class Accounts {
 	@Column(length = 50)
 	private String accountNum;
 	
+
+	public Accounts(Long i, String string, String string2, String string3) {
+		this.id= i;
+		this.firstName= string;
+		this.lastName= string2;
+		this.accountNum= string3;
+	}
 
 	public String getFirstName() {
 		return firstName;
